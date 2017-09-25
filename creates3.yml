@@ -1,0 +1,12 @@
+---
+- name: create s3 bucket in aws
+- tasks:
+    - name: creation started
+      s3_bucket:
+        name: ansibletaivmdisks
+        policy: policy.json
+        requester_pays: yes
+        versioning: yes
+      tags:
+        example: tag1
+        another: tag2

@@ -1,0 +1,15 @@
+{
+   "Version": "2017-09-25",
+   "Statement": [
+      {
+         "Effect": "Allow",
+         "Principal": { "Service": "ansibletaivmdisks.amazonaws.com" },
+         "Action": "sts:AssumeRole",
+         "Condition": {
+            "StringEquals":{
+               "sts:Externalid": "vmrole"
+            }
+         }
+      }
+   ]
+}
