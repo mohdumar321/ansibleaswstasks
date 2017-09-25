@@ -1,9 +1,9 @@
 {
-   "Version": "2017-09-25",
+   "Version": "2017-09-26",
    "Statement": [
       {
          "Effect": "Allow",
-         "Principal": { "Service": "ansibletaivmdisks.amazonaws.com" },
+         "Principal": { "Service": "vmie.amazonaws.com" },
          "Action": "sts:AssumeRole",
          "Condition": {
             "StringEquals":{

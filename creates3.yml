@@ -3,10 +3,8 @@
 - tasks:
     - name: creation started
       s3_bucket:
-        name: ansibletaivmdisks
+        name: disk-image-file-bucket-atos
         policy: policy.json
         requester_pays: yes
         versioning: yes
-      tags:
-        example: tag1
-        another: tag2
+    

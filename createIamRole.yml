@@ -5,10 +5,4 @@
     iam_type: role
     name: vmrole
     state: present
-    trust_policy:
-      Version: '2017-09-25'
-      Statement:
-      - Action: sts:AssumeRole
-        Effect: Allow
-        Principal:
-          Service: ansibletaivmdisks.amazonaws.com
+    trust_policy_path: trust-policy.json
