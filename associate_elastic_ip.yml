@@ -1,0 +1,11 @@
+- name: Allocating elastic IP to instance
+  ec2_eip:
+    aws_access_key: my_access_key
+    aws_secret_key: my_secret_key
+    in_vpc: yes
+    reuse_existing_ip_allowed: yes
+    state: present
+    region: us-east-1
+    instance_id: "{{ newinstance.instance_ids[0] }}"
+  register: instance_eip
+- debug: var=instance_eip.public_ip
