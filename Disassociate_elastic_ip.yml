@@ -9,10 +9,5 @@
     ec2_eip:
       aws_access_key: "{{aws_access_key}}"
       aws_secret_key: "{{aws_secret_key}}"
-      in_vpc: yes
-      reuse_existing_ip_allowed: yes
-      state: present
       region: us-west-1
-      device_id: instanceid
-    register: instance_eip
-  - debug: var=instance_eip.public_ip
+      ip: current ip address
